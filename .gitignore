@@ -9,13 +9,10 @@ application/logs/*
 !application/*/.htaccess
 
 assets_bs3/
-assets_bs4/
-assets_login/
 
 composer.lock
 
 system/
-
 
 user_guide_src/build/*
 user_guide_src/cilexer/build/*
