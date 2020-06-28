@@ -8,7 +8,7 @@ application/logs/*
 
 !application/*/.htaccess
 
-assets_bs3/
+
 
 composer.lock
 
