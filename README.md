@@ -1,3 +1,3 @@
 # ci311ccg
-aplikasi sim sppd web cc
+aplikasi sim web cc
 # ci311ccg
