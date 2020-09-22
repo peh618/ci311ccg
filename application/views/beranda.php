@@ -157,7 +157,7 @@ ini_set('error_reporting', E_ALL);
           $main_menu = $this->db->get_where('menu', array('main_menu' => 1));
           foreach ($main_menu->result() as $main) {
             // Qgituery untuk mencari data sub menu
-            // sebagai
+            // sebagai hjh
             $sub_menu = $this->db->get_where('menu', array('main_menu' => $main->id_menu));
             // Memeriksa apakah ada sub menu, jika ada sub menu tampilkan dimana nilai row dari id_menu dari menu utama yag nilainya 0
             if ($sub_menu->num_rows() > 0) {
