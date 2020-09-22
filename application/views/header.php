@@ -42,13 +42,13 @@ ini_set('error_reporting', E_ALL);
   <!-- Google Font -->
   <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic"> -->
   <!-- <link href="<?= base_url(); ?>assets_bs3/SourceSansPro/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet"> -->
- <link rel="stylesheet" href="<?= base_url(); ?>assets_bs3/SourceSansPro/SourceSansPro.css"> 
+  <link rel="stylesheet" href="<?= base_url(); ?>assets_bs3/SourceSansPro/SourceSansPro.css">
   <!-- sweet alert -->
   <!-- <link href="<?= base_url(); ?>assets_bs3/plugins/sweetalert/sweetalert2.min.css" rel="stylesheet"> -->
- <!-- jquery -->
+  <!-- jquery -->
   <script src="<?= base_url(); ?>assets_bs3/bower_components/jquery/dist/jquery.min.js"></script>
-<!-- sweet alert -->
-<script src="<?= base_url(); ?>assets_bs3/plugins/sweetalert1/dist/sweetalert.min.js"></script>
+  <!-- sweet alert -->
+  <script src="<?= base_url(); ?>assets_bs3/plugins/sweetalert1/dist/sweetalert.min.js"></script>
   <link href="<?= base_url(); ?>assets_bs3/plugins/sweetalert1/dist/sweetalert.css" rel="stylesheet">
 
 </head>
@@ -153,7 +153,7 @@ ini_set('error_reporting', E_ALL);
           <br />
           <?php
           // Data main menu
-          $main_menu = $this->db->get_where('menu', array('main_menu' => 0));
+          $main_menu = $this->db->get_where('menu', array('main_menu' => 1));
           foreach ($main_menu->result() as $main) {
             // Query untuk mencari data sub menu
             $sub_menu = $this->db->get_where('menu', array('main_menu' => $main->id_menu));
